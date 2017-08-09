@@ -1,0 +1,3 @@
+baseurl: /proto-coleridge
+exclude: ['README.md']
+permalink: /:title/

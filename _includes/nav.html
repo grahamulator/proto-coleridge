@@ -1,0 +1,47 @@
+<!-- Responsive Navigation Bar (made with Bootstrap) -->
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{site.baseurl}}/">Coleridge</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="{{site.baseurl}}/knowledge" class="taphover">Knowledge <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{site.baseurl}}/training">Training</a></li>
+            <!--<li><a href="{{site.baseurl}}/analytics">Analytics</a></li>-->
+            <li><a href="{{site.baseurl}}/research">Research</a></li>
+          </ul>
+        </li>
+        <!-- Dropdowns to be implemented in later release -->
+        <!--
+        <li class="dropdown">
+          <a href="{{site.baseurl}}/computing" class="taphover">Computing <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{site.baseurl}}/adrf">ADRF</a></li>
+            <li><a href="{{site.baseurl}}/cdf">CDF</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="{{site.baseurl}}/network" class="taphover">Network <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{site.baseurl}}/discussion">Discussion</a></li>
+            <li><a href="{{site.baseurl}}/journal">Journal</a></li>
+            <li><a href="{{site.baseurl}}/conference">Conference</a></li>
+          </ul>
+        </li>
+        -->
+        <li><a href="{{site.baseurl}}/computing" class="{% if page.url == '/computing' %}active{% endif %}">Computing</a></li>
+        <li><a href="{{site.baseurl}}/network" class="{% if page.url == '/network' %}active{% endif %}">Network</a></li>
+        <li><a href="{{site.baseurl}}/about" class="{% if page.url == '/about' %}active{% endif %}">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
